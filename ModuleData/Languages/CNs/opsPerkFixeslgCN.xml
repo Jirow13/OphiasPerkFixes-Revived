@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="简体中文" />
+  </tags>
+  <strings>
+    <string id="opsdeploy-start" text="部署阶段，按E进入战斗。" />
+    <string id="opsdeploy-end" text="战斗开始!" />
+	<string id="bandage2" text="战场上能够使用绷带治疗自己,{newline}第一次回血效果是50%,{newline}此后每次治疗效果减半,{newline}并且在绷带数量大于等于2的情况下{newline}受到致命伤害时可以抵消此次伤害{newline}并保留一定量的生命值" />
+	
+  </strings>
+</base>
