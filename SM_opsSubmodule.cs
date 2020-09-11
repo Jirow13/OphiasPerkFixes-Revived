@@ -29,7 +29,7 @@ namespace OphiasPerkFixes
 		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
 		{
 			base.OnGameStart(game, gameStarterObject);
-			if (game.GameType is Campaign)
+			if ( (game != null) && game.GameType is Campaign)
 			{
 				CampaignGameStarter campaignGameStarter = gameStarterObject as CampaignGameStarter;
 			}

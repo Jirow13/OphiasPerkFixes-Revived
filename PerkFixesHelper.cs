@@ -6,9 +6,9 @@ using TaleWorlds.Library;
 
 namespace OphiasPerkFixes
 {
-	public class PerkFixesHelper
+	public static class PerkFixesHelper
 	{
-		public static void fixPerkBonus(DefaultPerks dpobj, string perkID, float primaryBonus, float secondaryBonus, SkillEffect.EffectIncrementType incrementType)
+		public static void FixPerkBonus(DefaultPerks dpobj, string perkID, float primaryBonus, float secondaryBonus, SkillEffect.EffectIncrementType incrementType)
 		{
 			bool flag = false;
 			FieldInfo field = typeof(DefaultPerks).GetField(perkID, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);

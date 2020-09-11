@@ -13,18 +13,18 @@ namespace OphiasPerkFixes
 		[HarmonyPatch("InitializePerks")]
 		public static void InitializePerksPostfix(DefaultPerks __instance)
 		{
-			PerkFixesHelper.fixPerkBonus(__instance, "OneHandedToBeBlunt", 5f, 0.5f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "OneHandedShieldWall", -20f, 5f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "OneHandedArrowCatcher", 5f, 5f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "OneHandedWayOfTheSword", 0.5f, 0.2f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "TwoHandedTerror", 20f, 10f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "TwoHandedHope", 30f, 5f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "TwoHandedWayOfTheGreatAxe", 0.5f, 0.2f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "PolearmStandardBearer", 15f, 0f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "PolearmHorseKiller", 70f, 0f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "PolearmFootwork", 2f, 0f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "PolearmLancer", 30f, 0f, SkillEffect.EffectIncrementType.AddFactor);
-			PerkFixesHelper.fixPerkBonus(__instance, "ThrowingSkullCrusher", 20f, 0f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "OneHandedToBeBlunt", 5f, 0.5f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "OneHandedShieldWall", -20f, 5f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "OneHandedArrowCatcher", 5f, 5f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "OneHandedWayOfTheSword", 0.5f, 0.2f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "TwoHandedTerror", 20f, 10f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "TwoHandedHope", 30f, 5f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "TwoHandedWayOfTheGreatAxe", 0.5f, 0.2f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "PolearmStandardBearer", 15f, 0f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "PolearmHorseKiller", 70f, 0f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "PolearmFootwork", 2f, 0f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "PolearmLancer", 30f, 0f, SkillEffect.EffectIncrementType.AddFactor);
+			PerkFixesHelper.FixPerkBonus(__instance, "ThrowingSkullCrusher", 20f, 0f, SkillEffect.EffectIncrementType.AddFactor);
 		}
 	}
 }
