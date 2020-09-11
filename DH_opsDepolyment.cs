@@ -35,7 +35,7 @@ namespace OphiasPerkFixes
 		public override void OnFormationUnitsSpawned(Team team)
 		{
 			base.OnFormationUnitsSpawned(team);
-			using (IEnumerator<Formation> enumerator = team.FormationsIncludingSpecial.GetEnumerator())
+            using (IEnumerator<Formation> enumerator = team.FormationsIncludingSpecial.GetEnumerator())
 			{
 				while (enumerator.MoveNext())
 				{

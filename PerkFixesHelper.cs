@@ -6,10 +6,8 @@ using TaleWorlds.Library;
 
 namespace OphiasPerkFixes
 {
-	// Token: 0x02000005 RID: 5
 	public class PerkFixesHelper
 	{
-		// Token: 0x0600000D RID: 13 RVA: 0x00002774 File Offset: 0x00000974
 		public static void fixPerkBonus(DefaultPerks dpobj, string perkID, float primaryBonus, float secondaryBonus, SkillEffect.EffectIncrementType incrementType)
 		{
 			bool flag = false;
