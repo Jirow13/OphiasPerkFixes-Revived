@@ -6,11 +6,9 @@ using TaleWorlds.MountAndBlade.View.Missions;
 
 namespace OphiasPerkFixes
 {
-	// Token: 0x02000003 RID: 3
 	[HarmonyPatch(typeof(MissionState), "HandleOpenNew")]
 	internal static class internal_HP_xyzDepolyment
 	{
-		// Token: 0x0600000A RID: 10 RVA: 0x00002590 File Offset: 0x00000790
 		private static void Postfix(MissionState __instance, ref Mission __result)
 		{
 			PartyBase mainParty = PartyBase.MainParty;

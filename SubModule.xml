@@ -1,7 +1,7 @@
 ﻿<Module>
-  <Name value="OphiasPerkFixes" />
+  <Name value="OphiasPerkFixes - Jiro's Fix" />
   <Id value="OphiasPerkFixes" />
-  <Version value="v0.4.0" />
+  <Version value="v0.5.1" />
   <SingleplayerModule value="true" />
   <MultiplayerModule value="false" />
   <DependedModules>

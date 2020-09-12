@@ -11,27 +11,22 @@ using TaleWorlds.MountAndBlade.View.Screen;
 
 namespace OphiasPerkFixes
 {
-	// Token: 0x02000002 RID: 2
 	public class DH_opsDepolyment : DeploymentHandler
 	{
-		// Token: 0x06000001 RID: 1 RVA: 0x00002048 File Offset: 0x00000248
 		public DH_opsDepolyment(bool isPlayerAttacker) : base(isPlayerAttacker)
 		{
 		}
 
-		// Token: 0x06000002 RID: 2 RVA: 0x00002051 File Offset: 0x00000251
 		public override void EarlyStart()
 		{
 			base.Mission.AllowAiTicking = false;
 		}
 
-		// Token: 0x06000003 RID: 3 RVA: 0x0000205F File Offset: 0x0000025F
 		public override void AfterStart()
 		{
 			base.AfterStart();
 		}
 
-		// Token: 0x06000004 RID: 4 RVA: 0x00002068 File Offset: 0x00000268
 		public override void OnFormationUnitsSpawned(Team team)
 		{
 			base.OnFormationUnitsSpawned(team);
@@ -75,7 +70,6 @@ namespace OphiasPerkFixes
 			base.Mission.AllowAiTicking = false;
 		}
 
-		// Token: 0x06000005 RID: 5 RVA: 0x0000225C File Offset: 0x0000045C
 		public override void FinishDeployment()
 		{
 			base.FinishDeployment();
@@ -103,7 +97,6 @@ namespace OphiasPerkFixes
 			InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=opsdeploy-end}Battle Start!", null).ToString(), new Color(0f, 0.8f, 0f, 1f)));
 		}
 
-		// Token: 0x06000006 RID: 6 RVA: 0x00002338 File Offset: 0x00000538
 		public override void OnMissionTick(float dt)
 		{
 			base.OnMissionTick(dt);
@@ -113,7 +106,6 @@ namespace OphiasPerkFixes
 			}
 		}
 
-		// Token: 0x06000007 RID: 7 RVA: 0x00002350 File Offset: 0x00000550
 		public void SetDeploymentBoundary()
 		{
 			Agent mainAgent = base.Mission.MainAgent;
@@ -146,7 +138,6 @@ namespace OphiasPerkFixes
 			base.Mission.Boundaries.Add("ops_boundary", list, true);
 		}
 
-		// Token: 0x06000008 RID: 8 RVA: 0x00002470 File Offset: 0x00000670
 		public new void RemoveAllBoundaries()
 		{
 			List<string> list = new List<string>();
@@ -163,7 +154,6 @@ namespace OphiasPerkFixes
 			}
 		}
 
-		// Token: 0x06000009 RID: 9 RVA: 0x00002528 File Offset: 0x00000728
 		private bool boundaryAdded()
 		{
 			bool result = false;
@@ -178,7 +168,6 @@ namespace OphiasPerkFixes
 			return result;
 		}
 
-		// Token: 0x04000001 RID: 1
 		private int formationSpawned;
 	}
 }
